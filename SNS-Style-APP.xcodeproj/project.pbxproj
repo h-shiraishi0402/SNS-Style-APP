@@ -13,9 +13,11 @@
 		3BB6AACE25BFBA9900021A71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB6AACC25BFBA9900021A71 /* Main.storyboard */; };
 		3BB6AAD025BFBA9A00021A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BB6AACF25BFBA9A00021A71 /* Assets.xcassets */; };
 		3BB6AAD325BFBA9A00021A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BB6AAD125BFBA9A00021A71 /* LaunchScreen.storyboard */; };
+		7F40C47E1A33DAAD5AECD66B /* Pods_SNS_Style_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A97E93DF8252E0F536D276D /* Pods_SNS_Style_APP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33128807F3EEE23DDF44C38C /* Pods-SNS-Style-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNS-Style-APP.release.xcconfig"; path = "Target Support Files/Pods-SNS-Style-APP/Pods-SNS-Style-APP.release.xcconfig"; sourceTree = "<group>"; };
 		3BB6AAC325BFBA9900021A71 /* SNS-Style-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SNS-Style-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BB6AAC625BFBA9900021A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BB6AAC825BFBA9900021A71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3BB6AACF25BFBA9A00021A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BB6AAD225BFBA9A00021A71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BB6AAD425BFBA9A00021A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B60E60171F5F59338BC8EEA /* Pods-SNS-Style-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNS-Style-APP.debug.xcconfig"; path = "Target Support Files/Pods-SNS-Style-APP/Pods-SNS-Style-APP.debug.xcconfig"; sourceTree = "<group>"; };
+		6A97E93DF8252E0F536D276D /* Pods_SNS_Style_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNS_Style_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F40C47E1A33DAAD5AECD66B /* Pods_SNS_Style_APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0C7A7BA6E94BA84F9772BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B60E60171F5F59338BC8EEA /* Pods-SNS-Style-APP.debug.xcconfig */,
+				33128807F3EEE23DDF44C38C /* Pods-SNS-Style-APP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3BB6AABA25BFBA9800021A71 = {
 			isa = PBXGroup;
 			children = (
 				3BB6AAC525BFBA9900021A71 /* SNS-Style-APP */,
 				3BB6AAC425BFBA9900021A71 /* Products */,
+				0C0C7A7BA6E94BA84F9772BB /* Pods */,
+				D2D67CA4CA64F447F71CDECD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "SNS-Style-APP";
 			sourceTree = "<group>";
 		};
+		D2D67CA4CA64F447F71CDECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A97E93DF8252E0F536D276D /* Pods_SNS_Style_APP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BB6AAD725BFBA9A00021A71 /* Build configuration list for PBXNativeTarget "SNS-Style-APP" */;
 			buildPhases = (
+				AB01778DD871BBAC411AE23B /* [CP] Check Pods Manifest.lock */,
 				3BB6AABF25BFBA9800021A71 /* Sources */,
 				3BB6AAC025BFBA9800021A71 /* Frameworks */,
 				3BB6AAC125BFBA9800021A71 /* Resources */,
+				C1BFC237532A3522EFEDD34D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB01778DD871BBAC411AE23B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNS-Style-APP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1BFC237532A3522EFEDD34D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNS-Style-APP/Pods-SNS-Style-APP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNS-Style-APP/Pods-SNS-Style-APP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNS-Style-APP/Pods-SNS-Style-APP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BB6AABF25BFBA9800021A71 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		3BB6AAD825BFBA9A00021A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B60E60171F5F59338BC8EEA /* Pods-SNS-Style-APP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +366,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "shiraishi1990.h-com.gmail.SNS-Style-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3BB6AAD925BFBA9A00021A71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33128807F3EEE23DDF44C38C /* Pods-SNS-Style-APP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "shiraishi1990.h-com.gmail.SNS-Style-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
